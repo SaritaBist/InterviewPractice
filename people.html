@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     const people = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 20 },
+  { name: 'David', age: 35 },
+  { name: 'Eve', age: 28 },
+  { name: 'Frank', age: 22 },
+  { name: 'Grace', age: 40 },
+];
+   let result=people.filter((obj)=>obj.age>=30);
+   for(let res of result)
+   {
+   document.write("Name"+ res.name + ", " + "Age" + res.age);
+   }
+  </script>
+ 
+</body>
+</html>

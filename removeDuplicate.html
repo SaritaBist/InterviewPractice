@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [1, 2, 2, 3, 4, 4, 5, 5];
+        // function removeDuplicates(num)
+        // {
+        //    for(let i=0;i<num.length-1;i++)
+        //    {
+        //      if(num[i]===num[i+1])   
+        //      {
+        //          num.splice(i,1);
+        //      }
+        //    }
+        //    return num;
+        // }
+        function removeDuplicates(arr) {
+     return [...new Set(arr)];
+}
+        const uniqueNumbers = removeDuplicates(numbers);
+        
+        document.write(uniqueNumbers);
+    </script>
+</body>
+</html>
