@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back function practice</title>
+</head>
+<body>
+    <script>
+        function add(a,b,func)
+        {
+            let c=a+b;
+            func(c);
+        }
+
+
+        function operation(n)
+        {
+           if(n%2==0)
+           {
+            document.write("Even number");
+           }
+           else{
+            document.write("Odd number");
+           }
+        }
+        add(6,6,operation)
+    </script>
+</body>
+</html>
