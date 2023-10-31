@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mycar=new Object();
+        mycar.name="Baleno"
+        mycar.model="new"
+        mycar.year='2024'
+
+        //Printing using console
+        // console.log(mycar);
+
+         // printing using for in loop
+        // for(let m in mycar)
+        // {
+        // document.write(mycar[m]);
+        // }
+
+
+        // printing single element
+
+        // document.write(mycar.name);
+        // document.write(mycar.model);
+        // document.write(mycar.year);
+
+       
+        mycar.toString=function()
+        {
+           return `${mycar.name},${mycar.model},${mycar.year}`
+        }
+        document.write(mycar);
+
+    </script>
+</body>
+
+</html>
