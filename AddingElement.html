@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Child Element</title>
+</head>
+<body>
+
+   <div class="container">
+    <p>Hello Sarita ,How are you ?/p>
+   </div>
+
+    <script>
+     let node=document.createElement("p");
+     let text=document.createTextNode("I'm fine and you")
+     let element=node.appendChild(text);
+     let div=document.querySelector(".container").appendChild(element);
+    </script>
+</body>
+</html>
